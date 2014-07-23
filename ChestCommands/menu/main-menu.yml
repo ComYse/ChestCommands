@@ -7,7 +7,7 @@
 menu-settings:
 
   # name - appears as the title - REQUIRED
-  name: '&4Chest Commands'
+  name: '&7[+]&6 Menu&7 [+]'
 
   # rows - the number of rows of the chest - REQUIRED
   rows: 3
@@ -15,11 +15,10 @@ menu-settings:
   # command - OPTIONAL (you can remove this or set it to '')
   command: 'menu'
 
-  # open-with-item - OPTIONAL (you can remove this or
-  # set the item-id/data-value to 0)
-  # In this case it will open with a book (right click)
+  # Pense-bete : changer l'item, modifie item-id et laissez à 0 data-value
+  # Pour ouvrir le menu, clique droit avec la boussole
   open-with-item:
-    item-id: 340
+    item-id: 345
     left-click: false
     right-click: true
 #   data-value: 0
@@ -31,41 +30,37 @@ menu-settings:
 ######################
 
 
-website:
-  COMMAND: 'tell:&7Website: &9dev.bukkit.org/bukkit-plugins/chest-commands'
-  NAME: '&9[+] Plugin website [+]'
+lobby:
+  COMMAND: 'lobby'
+  NAME: '&2[+] Lobby [+]'
   LORE:
-    - 'Link to the website of the plugin.'
-    - 'Click to get the link.'
-  ID: lava_bucket
+    - 'Clique içi pour retourner au Lobby !'
+  ID: bed
+  KEEP-OPEN: false
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+nope1:
+  COMMAND: ''
+  NAME: '&a[+] Choisis un jeu [+]'
+  LORE:
+  ID: glass_pane
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+courdedev:
+  COMMAND: ''
+  NAME: '&4[+] En cours de développement [+]'
+  LORE:
+    - 'Nous sommes désolés mais le menu est'
+    - 'en cours de développement'
+  ID: redstone
+  KEEP-OPEN: false
   POSITION-X: 3
-  POSITION-Y: 2
-
-
-tutorial:
-  COMMAND: 'open:plugin-tutorial.yml'
-  NAME: '&a[+] Plugin tutorial [+]'
-  LORE:
-    - 'Click to open a menu that'
-    - 'will teach you how to use'
-    - 'ChestCommands.'
-  ID: book
-  KEEP-OPEN: true
-  POSITION-X: 4
-  POSITION-Y: 2
-
-
-example:
-  COMMAND: 'open:example.yml'
-  NAME: '&e[+] Example menu [+]'
-  LORE:
-    - 'How should a menu look like.'
-    - 'You will find examples on'
-    - 'every feature.'
-  ID: chest
-  KEEP-OPEN: true
-  POSITION-X: 5
-  POSITION-Y: 2
+  POSITION-Y: 1
 
 
 admin:
@@ -76,7 +71,7 @@ admin:
     - 'use the plugin.'
   ID: command
   KEEP-OPEN: true
-  POSITION-X: 6
+  POSITION-X: 1
   POSITION-Y: 2
 
 
@@ -88,5 +83,5 @@ shop:
     - 'GUI shops with this plugin.'
   ID: emerald
   KEEP-OPEN: true
-  POSITION-X: 7
-  POSITION-Y: 2
+  POSITION-X: 1
+  POSITION-Y: 3
